@@ -1,0 +1,8 @@
+Data files
+
+Download data.7z from the following link.
+https://drive.google.com/drive/folders/1KcT7oLxAoyQ5DOapK96WUmz_AFmaZSAt?usp=share_link
+
+Extract using 7-zip (https://www.7-zip.org/)
+
+Put all files in the data folder.
