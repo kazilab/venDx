@@ -10,4 +10,4 @@ __description__ = 'venDx'
 __version__ = '0.0.1'
 __url__ = 'https://www.kazilab.se'
 
-from .runTab import run_tabnet as TabNet
+from .runTab import run_tabnet as venDx
