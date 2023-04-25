@@ -228,7 +228,7 @@ def custom_score(model, x_train, y_train, x_test, y_test):
     train_score = combined_kappa_mcc(y_train, train_pred)
     test_score = combined_kappa_mcc(y_test, test_pred)
     diff = (train_score - test_score)**2
-    ts = test_score**2
+    ts = (1-test_score)**2
     return (diff*ts)**0.25
 
 # ***************** Confusion Matrix by SKLEARN **********************************
