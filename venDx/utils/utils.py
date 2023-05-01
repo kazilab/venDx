@@ -144,7 +144,7 @@ def shap_(model, x_test, path, sampling_method, param_search):
         shap.summary_plot(shap_values, x_test, plot_type='layered_violin', color='#cccccc', show=False)
         plt.title('SHAP layered violin plot gray scale')
         plt.grid(None)
-        pdf.savefig(ransparent=False, facecolor='auto', edgecolor='auto')
+        pdf.savefig(transparent=False, facecolor='auto', edgecolor='auto')
         plt.close()
         shap.summary_plot(shap_values, x_test, plot_type='layered_violin', show=False)
         plt.title('SHAP layered violin plot')
