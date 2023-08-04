@@ -133,11 +133,11 @@ def run_tabnet(sampling_method="no",
     
     # Normalize data using min-max normalization between 0 and 1.
     sel_labeled_data_mm = min_max(
-                                  sel_labeled_data
-                                  )
+                                  sel_labeled_data.T
+                                  ).T
     sel_unlabeled_data_mm = min_max(
-                                    sel_unlabeled_data
-                                    )
+                                    sel_unlabeled_data.T
+                                    ).T
     
     # Encode labels "Change here drug name if you have a table with multiple drugs
     labels = data_labels['Sensitivity'].replace(['resistant', 'sensitive'], [1, 0])
